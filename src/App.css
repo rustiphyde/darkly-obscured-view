@@ -1,38 +1,51 @@
+:root {
+  --background: #000000;
+  --glow: #3efd45;
+  --purp: #870198;
+}
+
+@font-face {
+  font-family: "CaptainHowdy";
+  src: url("./fonts/CaptainHowdy.ttf")
+}
+
 .App {
   text-align: center;
+  padding-top: 64px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: var(--background);
+  text-align: center;
+  margin: 0 auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+  font-family: "CaptainHowdy";
+  color: white;
+  font-size: 2rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h3 {
+  font-family: "CaptainHowdy";
+  color: white;
+  font-size: 1.5rem;
+}
+
+.icon-green {
+  color: var(--glow) !important;
+}
+
+.icon-purple {
+  color: var(--purp);
+}
+
+.icon-black {
+  color: var(--background);
+}
+
+.icon-white {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
