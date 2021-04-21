@@ -1,23 +1,12 @@
-import logo from './logo.svg';
 import './App.css';
+import SplashLogo from './icons/SplashLogo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>DARKLYOBSCURED.COM</h1>
+      <SplashLogo className="splash"/>
+      <h3>COMING SOON</h3>
     </div>
   );
 }
