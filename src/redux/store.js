@@ -23,9 +23,9 @@ const reducers = combineReducers({
   data: dataReducer,
   // Everything that comes from uiReducer.js will be stored inside the UI object
   UI: uiReducer,
-  // Everthing that comes from firebaseReducer will be stored inside the firebase object
+  // Everything that comes from firebaseReducer will be stored inside the firebase object
   firebase: firebaseReducer,
-  // Everthing that comes from firestoreReducer will be stored inside the firestore object
+  // Everything that comes from firestoreReducer will be stored inside the firestore object
   firestore: firestoreReducer
 });
 
