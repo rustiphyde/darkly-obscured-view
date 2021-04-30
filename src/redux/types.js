@@ -18,5 +18,6 @@ export const CLEAR_SUCCESS = 'CLEAR_SUCCESS';
 // Data Reducer Types
 export const SET_INVESTIGATIONS = 'SET_INVESTIGATIONS';
 export const SET_INVESTIGATION = 'SET_INVESTIGATION';
+export const SET_INV_ID = 'SET_INV_ID';
 export const LOADING_DATA = 'LOADING_DATA';
 
