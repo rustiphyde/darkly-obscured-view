@@ -6,7 +6,7 @@
 
 @font-face {
   font-family: "CaptainHowdy";
-  src: url("./fonts/CaptainHowdy.ttf")
+  src: url("./fonts/CaptainHowdy.woff");
 }
 
 .App {
@@ -23,7 +23,7 @@ body {
 
 h1 {
   font-family: "CaptainHowdy";
-  color: white;
+  color: var(--glow);
   font-size: 2rem;
 }
 
