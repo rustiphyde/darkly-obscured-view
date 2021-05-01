@@ -7,9 +7,7 @@ const AuthRoute = ({ component: Component, authenticated, ...rest }) => (
 	<Route
 		{...rest}
 		render={(props) =>
-			userAuth === true ? (
-				<Redirect to="/" />
-			) : invAuth === true ? (
+			authenticated === true ? (
 				<Redirect to="/" />
 			) : (
 				<Component {...props} />
@@ -19,12 +17,10 @@ const AuthRoute = ({ component: Component, authenticated, ...rest }) => (
 );
 
 const mapStateToProps = (state) => ({
-	userAuth: state.user.authenticated,
-	invAuth: state.invest.authenticated,
+	authenticated: state.invest.authenticated,
 });
 
 AuthRoute.propTypes = {
-	user: PropTypes.object,
 	invest: PropTypes.object,
 };
 
