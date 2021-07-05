@@ -4,6 +4,20 @@
   --purp: #870198;
 }
 
+html {
+  cursor: url("./imgs/DO-Ouija.png"), default !important;
+}
+
+@font-face {
+  font-family: "GeorgiaBoldItalics";
+  src: url("./fonts/GeorgiaBoldItalic.woff");
+}
+
+@font-face {
+  font-family: "GeorgiaBold";
+  src: url("./fonts/GeorgiaBold.woff");
+}
+
 @font-face {
   font-family: "CaptainHowdy";
   src: url("./fonts/CaptainHowdy.woff");
@@ -19,6 +33,83 @@ body {
   background-color: var(--background);
   text-align: center;
   margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.MuiButton-containedPrimary {
+  color: black !important;
+  background-color: var(--glow) !important;
+}
+
+.MuiButton-containedPrimary:hover {
+  color: white !important;
+  background-color: var(--purp) !important;
+  cursor: url("./imgs/DO-Ouija.png") !important;
+}
+
+.MuiButton-root {
+  min-width: 132px !important;
+  margin: 16px !important;
+  cursor: url("./imgs/DO-Ouija.png") !important;
+}
+
+.MuiButtonBase-root, button, a, a:-webkit-any-link {
+  cursor: url("./imgs/DO-Ouija.png"), default !important;
+}
+
+.MuiTooltip-tooltipPlacementTop {
+  margin-bottom: -12px !important;
+  width: 200px;  
+}
+
+.or {
+  color: white;
+  font-family: "CaptainHowdy";
+  font-size: 1.5rem;
+  letter-spacing: 3;
+}
+
+.MuiTooltip-tooltip {
+  font-size: 1rem !important;
+  color:#3efd45 !important;
+  background-color: transparent !important;
+}
+
+.dopi {
+  font-family: "GeorgiaBoldItalic";
+  color: white;
+  font-size: 2rem;
+
+}
+
+.logout {
+  color: white;
+  font-size: 3.5rem !important;
+}
+
+.logout:hover {
+  color:#3efd45;
+}
+
+#email, #password, #confirmPassword, #first, #last {
+  background-color: white;
+  padding-left: 16px;
+  margin: 6px 32px;
+} 
+
+#email-label, #password-label, #confirmPassword-label, #first-label, #last-label {
+  padding-left: 48px;
+  color: #3efd45;
+  font-family: "GeorgiaBold"
+}
+
+.small-text {
+  font-family: "GeorgiaBold";
+  color: white;
+  font-size: 1.25rem;
 }
 
 h1 {
@@ -49,3 +140,58 @@ h3 {
   color: white;
 }
 
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.socials {
+  color: #870198;
+  line-height: 36px;
+  font-family: "GeorgiaBoldItalics";
+}
+
+.logo-icons {
+  color: white;
+  font-size: 2rem;
+  margin: 8px;
+}
+
+.logo-icons:hover {
+  color: #3efd45;
+}
+
+hr {
+  margin: 6px 0 6px 0;
+  height: 1px;
+  background-color: #3efd45 !important;
+  border: none;
+  width: 100%;
+}
+
+.header {
+ background: url("./imgs/Header-Background.png") !important;
+ background-repeat: no-repeat !important;
+ background-size: cover !important;
+ background-position: center !important;
+}
+
+.main-logo {
+  margin-top: 32px;
+}
+
+@media(max-width: 540px){
+  .break {
+    display: block;
+  }
+  .MuiTooltip-tooltipPlacementTop {
+    margin-bottom: 16px !important; 
+  }
+}
+
+@media(min-width: 541px){
+  .break {
+    display: none;
+  }
+}
