@@ -2,6 +2,7 @@ import {
 	LOADING_DATA,
 	SET_INVESTIGATION,
     SET_INVESTIGATIONS,
+    SET_INV_ID
 } from "../types";
 
 const initialState = {
@@ -11,7 +12,7 @@ const initialState = {
 	loading: false,
 };
 
-export default function (state = initialState, action) {
+const dataReducer = (state = initialState, action) => {
 	switch (action.type) {
 		case LOADING_DATA:
 			return {
@@ -38,3 +39,5 @@ export default function (state = initialState, action) {
 			return state;
 	}
 }
+
+export default dataReducer;
