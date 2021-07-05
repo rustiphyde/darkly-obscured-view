@@ -8,7 +8,7 @@ const AuthRoute = ({ component: Component, authenticated, ...rest }) => (
 		{...rest}
 		render={(props) =>
 			authenticated === true ? (
-				<Redirect to="/" />
+				<Redirect to="/home" />
 			) : (
 				<Component {...props} />
 			)
@@ -21,7 +21,7 @@ const mapStateToProps = (state) => ({
 });
 
 AuthRoute.propTypes = {
-	invest: PropTypes.object,
+	invest: PropTypes.object
 };
 
 export default connect(mapStateToProps)(AuthRoute);
