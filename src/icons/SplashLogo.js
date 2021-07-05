@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class SplashLogo extends Component {
     render(){
         return (
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-440 0 1200 320">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-64 0 3500 320">
 
     <g fill="#ffffff">
     <path d="M120.4,106c0,15.4-3.2,27.7-9.5,37c-5.6,8.1-13.2,13.2-22.9,15.3c-1.1,0.2-2.2,0.4-3.3,0.6
